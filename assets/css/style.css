@@ -1,7 +1,184 @@
 @import url("reset.css");
 * {
-    font-family: "Roboto", Arial, sans-serif;
-    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: rgba(35, 39, 42, 1);
+}
+img {
+    max-width: 100%;
 }
 
+h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: calc(1rem + 3vw);
+    font-weight: 400;
+    font-style: normal;
+    margin: 1.5rem 0;
+}
+.title {
+    color: white;
+}
+header {
+    background-image: url("../images/capa-discord.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3rem 10%;
+}
+.cover p {
+    color: white;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+.flexButtons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+button {
+    padding: 1rem;
+    text-align: center;
+    max-width: calc(428px - 6rem);
+    min-width: max-content;
+    border-radius: 2rem;
+    cursor: pointer;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.firstButton {
+    background-color: white;
+    flex-grow: 1;
+}
+.firstButton:hover {
+    background-color: rgba(35, 39, 42, 0.4);
+    color: white;
+}
+.secondButton {
+    background-color: rgba(35, 39, 42, 1);
+    color: white;
+    font-weight: 300;
+}
+.secondButton:hover {
+    background-color: rgba(35, 39, 42, 0.7);
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 1.5rem 0;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 2rem 10%;
+    align-items: center;
+    justify-content: center;
+}
+.section2, .section4 {
+    background: rgba(246, 246, 246, 1);
+}
+section p {
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+
+footer {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(35, 39, 42, 1);
+    padding: 3rem;
+}
+
+@media (min-width: 1000px) {
+    header p {
+        text-align: center;
+        width: 710px;
+    }
+    h1 {
+        font-size: calc(2rem + 2vw);
+        text-align: center;
+    }
+    header {
+        background-size: fill;
+        padding: 7% 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        white-space: nowrap;
+        width: auto;
+        margin: .5rem 0rem;
+        padding: .7rem 1.3rem;
+    }
+    .flexButtons {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 3rem 10%;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    img {
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text {
+        flex-basis: 330px;
+        max-width: 70%;
+        flex-grow: 1;
+    }
+    h2 {
+        font-size: calc(1rem + 1vw);
+    }
+    section h1 {
+        font-size: calc(1.9rem + 1vw);
+    }
+    .section4 p {
+        text-align: center;
+    }
+    section.section4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section4 div {
+        max-width: 780px;
+        flex-grow: 0;
+        flex-basis: auto;
+    }
+}
+
+@media (min-width: 1280px) {
+    .text {
+        max-width: 335px;
+    }
+}
